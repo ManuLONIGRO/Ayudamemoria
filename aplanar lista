@@ -1,0 +1,12 @@
+#tengo una lista dentro de otra y necesito una sola lista:
+# initializing the data and an empty list
+data = [[1, 2, 3], [4, 5], [6, 7, 8, 9, 10]]
+flat_list = []
+
+# iterating over the data
+for item in data:
+    # appending elements to the flat_list
+    flat_list += item
+
+# printing the resultantn flat_list
+print(flat_list)
