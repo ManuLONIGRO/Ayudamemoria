@@ -1,0 +1,10 @@
+import numpy as np
+
+p_train = 0.70 # Porcentaje de train.
+
+df['is_train'] = np.random.uniform(0, 1, len(df)) <= p_train
+train, test = df[df['is_train']==True], df[df['is_train']==False]
+df = df.drop('is_train', 1)
+
+print("Ejemplos usados para entrenar: ", len(train))
+print("Ejemplos usados para test: ", len(test))
