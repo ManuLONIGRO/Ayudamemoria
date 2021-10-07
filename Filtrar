@@ -1,0 +1,4 @@
+#Tengo un df con columna "eduation" y lo filtro por VALUES
+values=["Bachelors","Masters","Doctorate"]
+filtered_df = df[df.education.isin(values)]
+filtered_df
