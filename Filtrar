@@ -2,3 +2,15 @@
 values=["Bachelors","Masters","Doctorate"]
 filtered_df = df[df.education.isin(values)]
 filtered_df
+
+#quiero el porcentaje de gente con cierta caracteristica. education es la columna, value_counts te cuenta las repeticiones y normalize hace un porcentaje.
+df["education"].value_counts(normalize=True)
+
+#selecciona por etiquetas una serie. de paso suma el resultado de las etiquetas.
+s[["Bachelors","Masters","Doctorate"]].sum()
+
+#union de condiciones
+planets[planets.year.isin([2008, 2009]) & planets.mass.isnull()]
+
+#sumar los valores de la serie, de ciertos index. 
+suma = e.loc["Bachelors"] + e.loc["Masters"] + e.loc["Doctorate"]
