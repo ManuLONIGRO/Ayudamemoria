@@ -1,3 +1,6 @@
+#todos los valores diferentes a 1, pasan a ser 1, excepto el 0
+df['column'] = df['column'].apply(lambda x : 0 if x == 1 else 1
+
 #Tengo un df con columna "eduation" y lo filtro por VALUES
 values=["Bachelors","Masters","Doctorate"]
 filtered_df = df[df.education.isin(values)]
