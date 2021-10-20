@@ -1,3 +1,6 @@
+#resetear los index, para volver a tenerlos. sirve si en vez de numeros en el index habias asignado nombres. tene genera una columna con esos nombres y pone numeros de index
+df = df.reset_index()
+
 #filtro y me quedo con ciertas caracteristicas concatenadas
 df_heat = df[(df['ap_lo']<=df['ap_hi']) &
     (df['height'] >= df['height'].quantile(0.025))&
