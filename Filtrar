@@ -1,3 +1,6 @@
+#indicar que una columna es de tiempo. fijarse si tengo barras o guiones, y si tengo horas min seg o no.
+df['Datetime'] = pd.to_datetime(df['Datetime'], format="%m/%d/%Y, %H:%M:%S")
+
 #resetear los index, para volver a tenerlos. sirve si en vez de numeros en el index habias asignado nombres. tene genera una columna con esos nombres y pone numeros de index
 df = df.reset_index()
 
