@@ -1,3 +1,10 @@
+#subir a github con git
+git status
+git add 02-JS-I/homework/homework.js #aca va el archivo que hay que comitear
+git status #para fijarse si ahora esta listo apra el commit
+git commit -m "el mensaje que quiera"
+git push
+
 #usar un archivo de github en colab
 !pip install -q xlrd
 !git clone https://github.com/ManuLONIGRO/Ayudamemoria.git
