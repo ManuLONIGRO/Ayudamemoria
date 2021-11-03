@@ -1,3 +1,11 @@
+#importar biopython
+try:
+    import google.colab
+    # Running on Google Colab, so install Biopython first
+    !pip install biopython
+except ImportError:
+    pass
+
 #subir a github con git
 git status
 git add 02-JS-I/homework/homework.js #aca va el archivo que hay que comitear
