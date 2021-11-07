@@ -1,3 +1,7 @@
+#descargar archivo desde google colab
+from google.colab import files
+files.download('ARCHIVO.xlsx') 
+
 #importar biopython
 try:
     import google.colab
