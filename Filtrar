@@ -50,6 +50,6 @@ suma = e.loc["Bachelors"] + e.loc["Masters"] + e.loc["Doctorate"]
 #agregar una columna basada en una condicion de otra columna. pone '1' si cumple la condicion y '0' si no la cumple, pero podes poner lo que vos quieras.
 df['overweight'] = np.where(df['bmi']>25,'1','0')
 
-#generar una serie y reemplazar la serie por una columna del df que tiene las mismas filas
+#cambiar tipo de dato en la columna de un df
 a = df['bmi'].astype(float)
 df['bmi'] = a
