@@ -1,3 +1,8 @@
+#generar una lista de numeros con un txt
+with open('lista.txt') as f:
+    contenido = f.read()
+data = contenido.split()
+
 #descargar archivo desde google colab
 from google.colab import files
 files.download('ARCHIVO.xlsx') 
