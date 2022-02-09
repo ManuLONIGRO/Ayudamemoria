@@ -1,3 +1,7 @@
+#mover elemento de una lista
+list1.insert(new_index, item) 'item puede ser list1[index]'
+list1.remove(item) 'item puede ser list1[index]'
+
 #BASH generar un FASTA a partir de un csv, cambia las ',' por una nueva linea y en este caso le pedi que cada linea que inica en sp, le agregue el '>' de FASTA
 $ cat ARCHIVO | tr ',' '\n' | sed 's/^sp/>sp/'
 
