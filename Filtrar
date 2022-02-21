@@ -1,3 +1,14 @@
+#es un numero? y de paso veo si el largo es 1
+if (any(chr.isdigit() for chr in a[0])==True) and (len(a)==1):
+
+#eliminar fila de df
+df = df.drop(df.index[[0]])
+
+#generar una lista de numeros con un txt
+with open('lista.txt') as f:
+    contenido = f.read()
+data = contenido.split()
+
 #agregar un valor a una lista
 lista.append('')#agrega un vacio al final de la lista
 lista.insert(index,'valor u otra lista') #agrega en el index que quieras
