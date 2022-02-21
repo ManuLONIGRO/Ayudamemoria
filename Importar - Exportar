@@ -1,14 +1,3 @@
-#es un numero? y de paso veo si el largo es 1
-if (any(chr.isdigit() for chr in a[0])==True) and (len(a)==1):
-
-#eliminar fila de df
-df = df.drop(df.index[[0]])
-
-#generar una lista de numeros con un txt
-with open('lista.txt') as f:
-    contenido = f.read()
-data = contenido.split()
-
 #descargar archivo desde google colab
 from google.colab import files
 files.download('ARCHIVO.xlsx') 
