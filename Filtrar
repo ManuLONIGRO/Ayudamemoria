@@ -1,3 +1,9 @@
+#crear columnas vacias necesitas numpy o pandas
+df['col vacia'] = np.nan
+df['col vacia'] = pd.Series()
+df['col vacia'] = ""
+
+
 #separar columna por cierto caracter
 df['Additional information:'].str.split(pat='\n')
 
