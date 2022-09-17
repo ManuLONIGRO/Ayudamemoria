@@ -1,0 +1,3 @@
+grep busca la palabra, -i ignora mayusculas, sort ordena -u se queda con las unicas, a esa salida vuelvo a buscarle la palabra como para que las
+masque en rojo, wc cuenta palabras
+grep -i 'inhibitor' h1_add.csv | sort -u | grep -i 'inhibitor' | wc
