@@ -1,2 +1,2 @@
-#descargar multiples paginas a partir de una lista.txt
+#descargar multiples paginas a partir de una lista.txt. PRESTAR ATENCION ` NO ES '
 for i in `cat lista.txt`; do wget https://biochemia.uwm.edu.pl/biopep/peptidedatacard.php?zm_ID=$i -O biopep_$i; done
