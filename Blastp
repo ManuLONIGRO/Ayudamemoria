@@ -35,3 +35,6 @@ blastp \
 -evalue 1e-5 \ #el evalue que pedimos
 -outfmt 6 \ #si dice 6 el archivo sale parseado sin info, el 7 tiene comentarios antes de los resultados
 -max_target_seqs 1 #nos quedamos solamente con el mejor hit
+
+#Para hacer el blast en loop de una lista con los nombres de los archivos fasta y una db humanproteins
+for i in `cat codesejemplo.txt` ; do blastp -query $i".fasta" -db humanproteins.fasta -out $i"results.tab" -outfmt 6 -max_target_seqs 5; done
