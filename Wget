@@ -1,2 +1,4 @@
 #descargar multiples paginas a partir de una lista.txt. PRESTAR ATENCION ` NO ES '
 for i in `cat lista.txt`; do wget https://biochemia.uwm.edu.pl/biopep/peptidedatacard.php?zm_ID=$i -O biopep_$i; done
+#este imprime la linea por la que va.
+for i in `cat only_new_uniprots.txt` ; do blastp -query $i".fasta" -db humanproteins.fasta -out $i"results.tab" -outfmt 6 -max_target_seqs 5 | printf "$i\n"; done
