@@ -1,3 +1,7 @@
+#mover columnas. reasignar index
+df.columns #para ver nuestras columnas
+df = df.reindex(columns=[columna1,columna2,columna3])
+
 #eliminar repeticiones de una serie
 list(set(df['food']))
 
