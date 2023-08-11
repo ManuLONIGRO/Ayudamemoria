@@ -1,0 +1,2 @@
+pip install spyder
+sudo apt-get install libxcb-xinerama0 #por si spyder si abre y se cierra inmediatamente.
