@@ -2,3 +2,6 @@
 for i in `cat lista.txt`; do wget https://biochemia.uwm.edu.pl/biopep/peptidedatacard.php?zm_ID=$i -O biopep_$i; done
 #este imprime la linea por la que va.
 for i in `cat only_new_uniprots.txt` ; do blastp -query $i".fasta" -db humanproteins.fasta -out $i"results.tab" -outfmt 6 -max_target_seqs 5 | printf "$i\n"; done
+
+#descagar de ftp de NCBI en sus respectivas subcarpetas evitando el error robots.txt
+wget -r -nc -np -nH -e robots=off  https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Planctomycetota_bacterium/
