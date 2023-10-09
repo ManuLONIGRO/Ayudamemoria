@@ -5,3 +5,6 @@ for i in `cat only_new_uniprots.txt` ; do blastp -query $i".fasta" -db humanprot
 
 #descagar de ftp de NCBI en sus respectivas subcarpetas evitando el error robots.txt
 wget -r -nc -np -nH -e robots=off  https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Planctomycetota_bacterium/
+
+#descargar de una lista de links
+for i in `cat links_prueba.txt` ; do wget -r -nc -np -nH -e robots=off  $i ; done
