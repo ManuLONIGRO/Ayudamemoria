@@ -1,3 +1,8 @@
+#crear .txt a partir de una lista
+with open('links_prueba.txt', 'w') as archivo:
+    for i in ftp:
+        archivo.write(i + '\n')
+
 #mover columnas. reasignar index
 df.columns #para ver nuestras columnas
 df = df.reindex(columns=[columna1,columna2,columna3])
