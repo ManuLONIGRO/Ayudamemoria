@@ -1,3 +1,8 @@
 grep busca la palabra, -i ignora mayusculas, sort ordena -u se queda con las unicas, a esa salida vuelvo a buscarle la palabra como para que las
 masque en rojo, wc cuenta palabras
 grep -i 'inhibitor' h1_add.csv | sort -u | grep -i 'inhibitor' | wc
+
+#buscar archivos y copiarlos en otro directorio. este busca archivos que tengan un numero seguido de _genomic.fna.gz
+#find busca en todas las subcarpetas del directorio.
+find /media/manu/datos/filogenia/sequences/genomes -regex '.*[0-9]_genomic.fna.gz' -exec cp {} /media/manu/datos/filogenia/sequences \;
+
