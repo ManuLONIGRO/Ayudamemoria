@@ -1,3 +1,8 @@
+#Como bajar y usar una base de datos. desde la pagina ftp de ncbi te descargasuna base que quieras.
+#Yo me baje la 16S_ribosomal_RNA y ejecute este codigo
+blastdbcmd -db 16S_ribosomal_RNA -entry all -out 16s.fsa
+·despues haces makeblastdb -i 16s.fsa -dbtype nucl
+
 #blastp
 #instalar python, blast y actualizar software
 sudo apt-get update && sudo apt-get -y install python ncbi-blast+
